@@ -9,6 +9,8 @@ let g:vimwiki_list = [{'path': '~/Documents/vimwiki/', 'syntax': 'markdown', 'ex
 let g:feedvim_urls = [ 'https://www.science.org/action/showFeed?type=etoc&feed=rss&jc=sciadv', 'https://www.science.org/action/showFeed?type=etoc&feed=rss&jc=sciimmunol' ]
 let mapleader = '\'
 
+colorscheme pablo
+
 call plug#begin('~/.vim/plugged')
   Plug 'preservim/nerdtree',
   Plug 'vimwiki/vimwiki',
