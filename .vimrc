@@ -12,9 +12,9 @@ let mapleader = '\'
 colorscheme pablo
 
 call plug#begin('~/.vim/plugged')
-  Plug 'preservim/nerdtree',
-  Plug 'vimwiki/vimwiki',
-  Plug 'vim-airline/vim-airline',
+  Plug 'preservim/nerdtree'
+  Plug 'vimwiki/vimwiki'
+  Plug 'ap/vim-css-color'
 call plug#end()
 
 nnoremap <leader>n :NERDTree<CR>
