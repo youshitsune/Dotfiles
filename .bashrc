@@ -146,4 +146,4 @@ alias cal='cal -m'
 alias safing="/opt/safing/portmaster/portmaster-start app"
 export PATH="$PATH:/home/luka/.local/bin"
 export PATH="$PATH:/home/luka/.gem/ruby/3.0.0/bin"
-
+export PATH="$PATH:/home/luka/go/bin"
