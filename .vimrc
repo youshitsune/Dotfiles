@@ -10,11 +10,16 @@ let g:feedvim_urls = [ 'https://www.science.org/action/showFeed?type=etoc&feed=r
 let mapleader = '\'
 
 colorscheme pablo
+set tabstop=4
 
 call plug#begin('~/.vim/plugged')
   Plug 'preservim/nerdtree'
   Plug 'vimwiki/vimwiki'
   Plug 'ap/vim-css-color'
+  Plug 'vim-airline/vim-airline'
+  Plug 'bobuhiro11/feed.vim'
+  Plug 'mattn/webapi-vim'
+  Plug 'tyru/open-browser.vim'
 call plug#end()
 
 nnoremap <leader>n :NERDTree<CR>
