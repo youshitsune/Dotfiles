@@ -5,9 +5,8 @@
     </head>
     <body>
 	<outline text="(New headlines)" xmlUrl="smartfeed:/newitems"/>
-	<outline text="Science Advances" xmlUrl="https://www.science.org/action/showFeed?type=etoc&amp;feed=rss&amp;jc=sciadv"/>
-	<outline text="Science Robotics" xmlUrl="https://www.science.org/action/showFeed?type=etoc&amp;feed=rss&amp;jc=scirobotics"/>
-	<outline text="Science Imunology" xmlUrl="https://www.science.org/action/showFeed?type=etoc&amp;feed=rss&amp;jc=sciimmunol"/>
-	<outline text="Science Daily" xmlUrl="https://www.science.org/rss/news_current.xml"/>
+	<outline text="Luke Smith's Webpage" xmlUrl="http://lukesmith.xyz/rss"/>
+	<outline text="Luke's Videos" xmlUrl="https://videos.lukesmith.xyz/feeds/videos.xml?sort=-publishedAt"/>
+	<outline text="LandChad.net: Web Guides for Internet Landchads!" xmlUrl="https://landchad.net/rss.xml"/>
     </body>
 </opml>
