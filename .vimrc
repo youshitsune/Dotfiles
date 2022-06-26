@@ -1,6 +1,8 @@
 set nocompatible
 filetype plugin on
 syntax on
+colorscheme pablo
+set tabstop=4
 
 autocmd BufEnter * if tabpagenr('$') == 1 && winnr('$') == 1 && exists('b:NERDTree') && b:NERDTree.isTabTree() | quit | endif
 autocmd BufRead diary.md VimwikiDiaryGenerateLinks
@@ -8,9 +10,6 @@ autocmd BufRead diary.md VimwikiDiaryGenerateLinks
 let g:vimwiki_list = [{'path': '~/Documents/vimwiki/', 'syntax': 'markdown', 'ext': '.md', 'index': 'Home'}]
 let g:feedvim_urls = [ 'https://www.science.org/action/showFeed?type=etoc&feed=rss&jc=sciadv', 'https://www.science.org/action/showFeed?type=etoc&feed=rss&jc=sciimmunol' ]
 let mapleader = '\'
-
-colorscheme pablo
-set tabstop=4
 
 call plug#begin('~/.vim/plugged')
   Plug 'preservim/nerdtree'
