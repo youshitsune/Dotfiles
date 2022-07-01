@@ -1,5 +1,6 @@
 set nocompatible
 filetype plugin on
+filetype detect
 syntax on
 colorscheme pablo
 set tabstop=4
@@ -8,7 +9,6 @@ autocmd BufEnter * if tabpagenr('$') == 1 && winnr('$') == 1 && exists('b:NERDTr
 autocmd BufRead diary.md VimwikiDiaryGenerateLinks
 
 let g:vimwiki_list = [{'path': '~/Documents/vimwiki/', 'syntax': 'markdown', 'ext': '.md', 'index': 'Home'}]
-let g:feedvim_urls = [ 'https://www.science.org/action/showFeed?type=etoc&feed=rss&jc=sciadv', 'https://www.science.org/action/showFeed?type=etoc&feed=rss&jc=sciimmunol' ]
 let mapleader = '\'
 
 call plug#begin('~/.vim/plugged')
@@ -16,7 +16,6 @@ call plug#begin('~/.vim/plugged')
   Plug 'vimwiki/vimwiki'
   Plug 'ap/vim-css-color'
   Plug 'vim-airline/vim-airline'
-  Plug 'bobuhiro11/feed.vim'
   Plug 'mattn/webapi-vim'
   Plug 'tyru/open-browser.vim'
 call plug#end()
