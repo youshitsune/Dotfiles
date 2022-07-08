@@ -1,14 +1,8 @@
-
-
 # Enable the subsequent settings only in interactive sessions
 case $- in
   *i*) ;;
     *) return;;
 esac
-
-
-
-
 
 # Path to your oh-my-bash installation.
 export OSH=/home/luka/.config/oh-my-bash
