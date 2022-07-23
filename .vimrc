@@ -2,7 +2,6 @@ set nocompatible
 filetype plugin on
 filetype detect
 syntax on
-colorscheme pablo
 set tabstop=4
 
 autocmd BufEnter * if tabpagenr('$') == 1 && winnr('$') == 1 && exists('b:NERDTree') && b:NERDTree.isTabTree() | quit | endif
