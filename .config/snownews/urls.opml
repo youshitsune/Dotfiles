@@ -5,8 +5,6 @@
     </head>
     <body>
 	<outline text="(New headlines)" xmlUrl="smartfeed:/newitems"/>
-	<outline text="Luke Smith's Webpage" xmlUrl="http://lukesmith.xyz/rss"/>
-	<outline text="Luke's Videos" xmlUrl="https://videos.lukesmith.xyz/feeds/videos.xml?sort=-publishedAt"/>
-	<outline text="LandChad.net: Web Guides for Internet Landchads!" xmlUrl="https://landchad.net/rss.xml"/>
+	<outline text="Luke Smith's Webpage" xmlUrl="https://lukesmith.xyz/index.xml"/>
     </body>
 </opml>
