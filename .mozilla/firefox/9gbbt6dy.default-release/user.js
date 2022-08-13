@@ -346,7 +346,7 @@ user_pref("browser.urlbar.speculativeConnect.enabled", false);
 /* 0806: disable location bar leaking single words to a DNS provider **after searching** [FF78+]
  * 0=never resolve single words, 1=heuristic (default), 2=always resolve
  * [1] https://bugzilla.mozilla.org/1642623 ***/
-user_pref("browser.urlbar.dnsResolveSingleWordsAfterSearch", 0;
+user_pref("browser.urlbar.dnsResolveSingleWordsAfterSearch", 0);
 /* 0807: disable location bar contextual suggestions [FF92+]
  * [SETTING] Privacy & Security>Address Bar>Suggestions from...
  * [1] https://blog.mozilla.org/data/2021/09/15/data-and-firefox-suggest/ ***/
