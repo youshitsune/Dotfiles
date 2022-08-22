@@ -22,6 +22,7 @@ aliases=(
 plugins=(
   git
   bashmarks
+  zoxide
 )
 
 source "$OSH"/oh-my-bash.sh
