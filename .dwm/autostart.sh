@@ -7,5 +7,5 @@ ibus-daemon -drxR
 dwmblocks &
 xset -dpms
 xset s off
-discord
 syncthing &
+discord
