@@ -8,4 +8,4 @@ dwmblocks &
 xset -dpms
 xset s off
 syncthing --no-browser &
-discord
+logseq
