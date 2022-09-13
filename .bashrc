@@ -39,3 +39,4 @@ alias ...='cd ../..'
 alias ....='cd ../../..'
 alias docker='sudo docker'
 alias config='/usr/bin/git --git-dir=/home/luka/dotfiles --work-tree=/home/luka'
+export PATH="$PATH:/snap/bin"
