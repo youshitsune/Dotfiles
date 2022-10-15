@@ -13,11 +13,14 @@ set nomodeline
 
 
 let mapleader = ' '
+let g:vimwiki_list = [{'path': '~/Documents/vimwiki/', 'syntax': 'markdown', 'ext': '.md'}]
 let NERDTreeMinimalUI = 1
 
+autocmd BufRead diary.md :VimwikiDiaryGenerateLinks
 
 call plug#begin('~/.vim/plugged')
 	Plug 'jiangmiao/auto-pairs'
+	Plug 'vimwiki/vimwiki'
     Plug 'junegunn/goyo.vim'
     Plug 'preservim/nerdtree'
     Plug 'flazz/vim-colorschemes'
