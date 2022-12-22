@@ -34,6 +34,7 @@ if [ -z "${DISPLAY}" ] && [ "${XDG_VTNR}" -eq 1 ]; then
 fi
 
 alias ls='exa -alh'
+alias docker='sudo docker'
 alias ..='cd ..'
 alias ...='cd ../..'
 alias ....='cd ../../..'
