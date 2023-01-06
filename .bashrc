@@ -33,6 +33,7 @@ if [ -z "${DISPLAY}" ] && [ "${XDG_VTNR}" -eq 1 ]; then
 	          exec startx
 fi
 
+alias g='git'
 alias ls='exa -alh'
 alias docker='sudo docker'
 alias ..='cd ..'
