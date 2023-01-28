@@ -35,9 +35,14 @@ fi
 
 alias g='git'
 alias ls='exa -alh'
+alias code='vscodium'
 alias docker='sudo docker'
 alias ..='cd ..'
 alias ...='cd ../..'
 alias ....='cd ../../..'
 alias config='/usr/bin/git --git-dir=/home/luka/dotfiles --work-tree=/home/luka'
-export PATH="$PATH:/snap/bin"
+export PATH="$PATH:/snap/bin:/home/luka/.local/bin"
+
+# bun
+export BUN_INSTALL="$HOME/.bun"
+export PATH=$BUN_INSTALL/bin:$PATH
