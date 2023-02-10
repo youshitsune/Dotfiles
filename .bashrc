@@ -42,6 +42,7 @@ alias ...='cd ../..'
 alias ....='cd ../../..'
 alias config='/usr/bin/git --git-dir=/home/luka/dotfiles --work-tree=/home/luka'
 export PATH="$PATH:/snap/bin:/home/luka/.local/bin"
+export EDITOR="vim"
 
 # bun
 export BUN_INSTALL="$HOME/.bun"
