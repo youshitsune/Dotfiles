@@ -17,6 +17,7 @@ let g:vimwiki_list = [{'path': '~/Documents/vimwiki/', 'syntax': 'markdown', 'ex
 let NERDTreeMinimalUI = 1
 
 autocmd BufRead diary.md :VimwikiDiaryGenerateLinks
+autocmd BufWritePost *.ms :! groff -ms %  -e -T pdf > %:r.pdf
 
 call plug#begin('~/.vim/plugged')
 	Plug 'jiangmiao/auto-pairs'
@@ -26,9 +27,12 @@ call plug#begin('~/.vim/plugged')
     Plug 'flazz/vim-colorschemes'
     Plug 'ap/vim-css-color'
     Plug 'evanleck/vim-svelte'
+    Plug 'ayu-theme/ayu-vim'
 call plug#end()
 
-colorscheme badwolf
+set termguicolors
+let ayucolor="dark"
+colorscheme ayu
 
 nnoremap <leader>g :Goyo<CR>
 nnoremap <leader>n :NERDTreeToggle<CR>
