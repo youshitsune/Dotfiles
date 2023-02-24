@@ -7,4 +7,5 @@ xinput set-prop "SynPS/2 Synaptics TouchPad" "Synaptics Tap Action" 1 1 1 2 1 3
 ibus-daemon -drxR
 xset -dpms
 xset s off
+nmcli d down ipv6leakintrf0
 nextcloud 
