@@ -41,9 +41,11 @@ alias ..='cd ..'
 alias ...='cd ../..'
 alias ....='cd ../../..'
 alias config='/usr/bin/git --git-dir=/home/luka/dotfiles --work-tree=/home/luka'
+alias wiki='vim ~/Documents/Notes/index.md'
 export PATH="$PATH:/snap/bin:/home/luka/.local/bin"
 export EDITOR="vim"
 
 # bun
 export BUN_INSTALL="$HOME/.bun"
-export PATH=$BUN_INSTALL/bin:$PATH
+export PATH=$BUN_INSTALL/bin:/usr/bin/watcom/binl64:$PATH
+. "$HOME/.cargo/env"
