@@ -49,3 +49,4 @@ export EDITOR="vim"
 export BUN_INSTALL="$HOME/.bun"
 export PATH=$BUN_INSTALL/bin:/usr/bin/watcom/binl64:$PATH
 . "$HOME/.cargo/env"
+export NNN_OPTS="H"
