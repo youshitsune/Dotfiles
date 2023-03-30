@@ -12,24 +12,29 @@ set incsearch
 set nocompatible
 set nomodeline
 set autochdir
+set laststatus=2
+set noshowmode
+if !has('gui_running')
+  set t_Co=256
+endif
 filetype plugin on
 
 let mapleader = ' '
 let g:vimwiki_list = [{'path': '~/Documents/Notes/', 'syntax': 'markdown', 'ext': '.md'}]
-let g:airline_theme = 'spaceduck'
-let NERDTreeMinimalUI = 1
+let g:lightline = {
+      \ 'colorscheme': 'spaceduck',
+      \ }
 
 autocmd BufRead diary.md :VimwikiDiaryGenerateLinks
 autocmd BufWritePost *.ms :! groff -ms %  -e -T pdf > %:r.pdf
 
 call plug#begin('~/.vim/plugged')
-	Plug 'jiangmiao/auto-pairs'
 	Plug 'vimwiki/vimwiki'
-    Plug 'junegunn/goyo.vim'
-    Plug 'preservim/nerdtree'
     Plug 'ap/vim-css-color'
     Plug 'pineapplegiant/spaceduck', { 'branch': 'main' }
-    Plug 'vim-airline/vim-airline'
+    Plug 'itchyny/lightline.vim'
+    Plug 'mcchrish/nnn.vim'
+    Plug 'junegunn/goyo.vim'
 call plug#end()
 
 if exists('+termguicolors')
@@ -41,10 +46,9 @@ endif
 colorscheme spaceduck
 
 nnoremap <leader>g :Goyo<CR>
-nnoremap <leader>n :NERDTreeToggle<CR>
+nnoremap <leader>n :NnnPicker<CR>
 nnoremap <C-J> <C-W><C-J>
 nnoremap <C-K> <C-W><C-K>
 nnoremap <C-L> <C-W><C-L>
 nnoremap <C-H> <C-W><C-H>
-
 
