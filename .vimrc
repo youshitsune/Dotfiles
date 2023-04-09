@@ -21,9 +21,7 @@ filetype plugin on
 
 let mapleader = ' '
 let g:vimwiki_list = [{'path': '~/Documents/Notes/', 'syntax': 'markdown', 'ext': '.md'}]
-let g:lightline = {
-      \ 'colorscheme': 'spaceduck',
-      \ }
+let g:airline_theme = 'catppuccin_mocha'
 
 autocmd BufRead diary.md :VimwikiDiaryGenerateLinks
 autocmd BufWritePost *.ms :! groff -ms %  -e -T pdf > %:r.pdf
@@ -31,7 +29,7 @@ autocmd BufWritePost *.ms :! groff -ms %  -e -T pdf > %:r.pdf
 call plug#begin('~/.vim/plugged')
 	Plug 'vimwiki/vimwiki'
     Plug 'ap/vim-css-color'
-    Plug 'pineapplegiant/spaceduck', { 'branch': 'main' }
+    Plug 'catppuccin/vim', { 'as': 'catppuccin' }
     Plug 'itchyny/lightline.vim'
     Plug 'mcchrish/nnn.vim'
     Plug 'junegunn/goyo.vim'
@@ -43,7 +41,7 @@ if exists('+termguicolors')
     set termguicolors
 endif
 
-colorscheme spaceduck
+colorscheme catppuccin_mocha
 
 nnoremap <leader>g :Goyo<CR>
 nnoremap <leader>n :NnnPicker<CR>
