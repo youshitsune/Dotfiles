@@ -13,35 +13,19 @@ set nocompatible
 set nomodeline
 set autochdir
 set laststatus=2
-set noshowmode
-if !has('gui_running')
-  set t_Co=256
-endif
 filetype plugin on
 
 let mapleader = ' '
-let g:vimwiki_list = [{'path': '~/Documents/Notes/', 'syntax': 'markdown', 'ext': '.md'}]
-let g:airline_theme = 'catppuccin_mocha'
-
-autocmd BufRead diary.md :VimwikiDiaryGenerateLinks
-autocmd BufWritePost *.ms :! groff -ms %  -e -T pdf > %:r.pdf
 
 call plug#begin('~/.vim/plugged')
-	Plug 'vimwiki/vimwiki'
     Plug 'ap/vim-css-color'
-    Plug 'catppuccin/vim', { 'as': 'catppuccin' }
-    Plug 'itchyny/lightline.vim'
     Plug 'mcchrish/nnn.vim'
     Plug 'junegunn/goyo.vim'
+    Plug 'vim-scripts/Adaryn.vim'
 call plug#end()
 
-if exists('+termguicolors')
-    let &t_8f = "\<Esc>[38;2;%lu;%lu;%lum"
-    let &t_8b = "\<Esc>[48;2;%lu;%lu;%lum"
-    set termguicolors
-endif
 
-colorscheme catppuccin_mocha
+colorscheme adaryn
 
 nnoremap <leader>g :Goyo<CR>
 nnoremap <leader>n :NnnPicker<CR>
