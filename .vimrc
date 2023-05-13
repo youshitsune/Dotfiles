@@ -16,12 +16,15 @@ set laststatus=2
 filetype plugin on
 
 let mapleader = ' '
+let g:vimwiki_list = [{'path': '~/Documents/Notes', 'syntax': 'markdown', 'ext': '.md', 'index': '00 HOME'}]
+
 
 call plug#begin('~/.vim/plugged')
     Plug 'ap/vim-css-color'
     Plug 'mcchrish/nnn.vim'
     Plug 'junegunn/goyo.vim'
     Plug 'vim-scripts/Adaryn.vim'
+    Plug 'vimwiki/vimwiki'
 call plug#end()
 
 
