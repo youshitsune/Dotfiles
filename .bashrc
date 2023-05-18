@@ -42,6 +42,7 @@ alias ...='cd ../..'
 alias ....='cd ../../..'
 alias config='/usr/bin/git --git-dir=/home/luka/dotfiles --work-tree=/home/luka'
 alias wiki='vim ~/Documents/Notes/index.md'
+alias mutt='neomutt'
 export PATH="$PATH:/snap/bin:/home/luka/.local/bin"
 export EDITOR="vim"
 
