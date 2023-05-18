@@ -18,6 +18,8 @@ filetype plugin on
 let mapleader = ' '
 let g:vimwiki_list = [{'path': '~/Documents/Notes', 'syntax': 'markdown', 'ext': '.md', 'index': '00 HOME'}]
 
+autocmd BufRead diary.md :VimwikiDiaryGenerateLinks
+
 
 call plug#begin('~/.vim/plugged')
     Plug 'ap/vim-css-color'
