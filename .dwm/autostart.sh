@@ -9,3 +9,4 @@ xset -dpms
 xset s off
 nmcli d down ipv6leakintrf0
 nextcloud 
+xautolock -time 10 -locker slock
