@@ -9,8 +9,9 @@ alias ls='exa -alh'
 alias ..='cd ..'
 alias ...='cd ../..'
 alias ....='cd ../../..'
-alias config='/usr/bin/git --git-dir=/home/luka/dotfiles --work-tree=/home/luka'
 alias mutt='neomutt'
+alias xclip='xclip -selection clip'
+alias config='/usr/bin/git --git-dir=/home/luka/dotfiles --work-tree=/home/luka'
 export PATH="$PATH:/home/luka/.local/bin"
 export EDITOR="vim"
 bindkey --emacs '\^L' clear-and-redraw-all
