@@ -11,8 +11,8 @@ alias ...='cd ../..'
 alias ....='cd ../../..'
 alias mutt='neomutt'
 alias xclip='xclip -selection clip'
-alias config='/usr/bin/git --git-dir=/home/luka/dotfiles --work-tree=/home/luka'
-export PATH="$PATH:/home/luka/.local/bin"
+alias config='/usr/bin/git --git-dir=/home/youshitsune/dotfiles --work-tree=/home/youshitsune'
+export PATH="$PATH:/home/youshitsune/.local/bin"
 export EDITOR="vim"
 bindkey --emacs '\^L' clear-and-redraw-all
 bindkey --vi-insert '\^L' clear-and-redraw-all

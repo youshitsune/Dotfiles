@@ -1,7 +1,7 @@
 #!/usr/bin/env bash 
 
 picom &
-feh /home/luka/.config/wallpapers/01.jpg --bg-scale
+feh /home/youshitsune/.config/wallpapers/01.jpg --bg-scale
 slstatus &
 xinput set-prop "MSFT0001:01 04F3:31BE Touchpad" "libinput Tapping Enabled" 1
 ibus-daemon -drxR
