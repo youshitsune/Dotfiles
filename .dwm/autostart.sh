@@ -3,7 +3,7 @@
 picom &
 feh /home/luka/.config/wallpapers/01.jpg --bg-scale
 slstatus &
-xinput set-prop "SynPS/2 Synaptics TouchPad" "Synaptics Tap Action" 1 1 1 2 1 3
+xinput set-prop "MSFT0001:01 04F3:31BE Touchpad" "libinput Tapping Enabled" 1
 ibus-daemon -drxR
 xset -dpms
 xset s off
