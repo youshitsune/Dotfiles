@@ -13,6 +13,8 @@ set nocompatible
 set nomodeline
 set autochdir
 set laststatus=2
+set encoding=utf-8
+scriptencoding utf-8
 filetype plugin on
 
 let mapleader = ' '
@@ -27,6 +29,7 @@ call plug#begin('~/.vim/plugged')
     Plug 'junegunn/goyo.vim'
     Plug 'vim-scripts/Adaryn.vim'
     Plug 'vimwiki/vimwiki'
+    Plug 'https://git.sr.ht/~torresjrjr/gemini.vim/'
 call plug#end()
 
 
