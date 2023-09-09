@@ -30,6 +30,8 @@ call plug#begin('~/.vim/plugged')
     Plug 'vim-scripts/Adaryn.vim'
     Plug 'vimwiki/vimwiki'
     Plug 'https://git.sr.ht/~torresjrjr/gemini.vim/'
+    Plug 'sudar/vim-arduino-syntax'
+    Plug 'vim-autoformat/vim-autoformat'
 call plug#end()
 
 
