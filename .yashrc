@@ -10,7 +10,6 @@ alias ..='cd ..'
 alias ...='cd ../..'
 alias ....='cd ../../..'
 alias mutt='neomutt'
-alias khal='khal calendar'
 alias xclip='xclip -selection clip'
 alias config='/usr/bin/git --git-dir=/home/youshitsune/dotfiles --work-tree=/home/youshitsune'
 export PATH="$PATH:/home/youshitsune/.local/bin"
