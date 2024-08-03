@@ -14,6 +14,9 @@ set nomodeline
 set autochdir
 set laststatus=2
 set encoding=utf-8
+set omnifunc=syntaxcomplete
+set ut=1000
+set completeopt-=preview
 scriptencoding utf-8
 filetype plugin on
 
@@ -27,15 +30,18 @@ call plug#begin('~/.vim/plugged')
     Plug 'ap/vim-css-color'
     Plug 'mcchrish/nnn.vim'
     Plug 'junegunn/goyo.vim'
-    Plug 'vim-scripts/Adaryn.vim'
     Plug 'vimwiki/vimwiki'
     Plug 'https://git.sr.ht/~torresjrjr/gemini.vim/'
     Plug 'sudar/vim-arduino-syntax'
     Plug 'vim-autoformat/vim-autoformat'
+    Plug 'bellinitte/uxntal.vim'
+    Plug 'leafOfTree/vim-svelte-plugin'
+    Plug 'fatih/vim-go'
+    Plug 'ycm-core/YouCompleteMe'
+    Plug 'SirVer/ultisnips'
 call plug#end()
 
-
-colorscheme adaryn
+colorscheme industry
 
 nnoremap <leader>g :Goyo<CR>
 nnoremap <leader>n :NnnPicker<CR>
