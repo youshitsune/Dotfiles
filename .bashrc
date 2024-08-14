@@ -45,9 +45,11 @@ alias wiki='vim ~/Documents/Notes/index.md'
 alias mutt='neomutt'
 export PATH="$PATH:/snap/bin:/home/luka/.local/bin"
 export EDITOR="vim"
+export XDG_CONFIG_HOME="/home/youshitsune/.config/"
+
 
 # bun
-export BUN_INSTALL="$HOME/.bun"
+export BUN_INSTALL="$HOME/.config/.bun"
 export PATH=$BUN_INSTALL/bin:/usr/bin/watcom/binl64:$PATH
 . "$HOME/.cargo/env"
 export NNN_OPTS="H"
